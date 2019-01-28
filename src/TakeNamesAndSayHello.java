@@ -7,7 +7,7 @@ public class TakeNamesAndSayHello {
         String[] names = new String[5];
         int counter = 0;
 
-        while (counter < 5) {
+        while (counter < names.length) {
             System.out.println("Podaj imię numer: " + (counter + 1));
             names[counter] = nameInput.nextLine();
             counter++;
@@ -15,7 +15,7 @@ public class TakeNamesAndSayHello {
         nameInput.close();
 
         System.out.println("Wszystkie dane wprowadzone");
-        counter = 4;
+        counter = names.length-1;
 
         while (counter >= 0) {
             System.out.println(names[counter]);
